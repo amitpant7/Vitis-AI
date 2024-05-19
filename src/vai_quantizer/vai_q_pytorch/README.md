@@ -306,7 +306,7 @@ Limitations: <br>
 ##### Fast finetune model 
 Sometimes direct quantization accuracy is not high enough, then it needs finetune model parameters. <br>
 - The fast finetuning is not real training of the model, and only needs limited number of iterations. For classification models on Imagenet dataset, 5120 images are enough in general.
-- It only needs do some modification based on evaluation model script and does not need setup optimizer for training.
+- It only needs some modification based on evaluation model script and does not need setup optimizer for training.
 - A function for model forwarding iteration is needed and will be called among fast finetuning. 
 - Re-calibration with original inference code is highly recommended.
 - Example code in example/resnet18_quant.py:
